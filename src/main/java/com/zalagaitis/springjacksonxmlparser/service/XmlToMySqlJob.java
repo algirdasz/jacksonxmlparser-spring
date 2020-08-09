@@ -15,8 +15,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class XmlToMySqlJob {
 
-    @Autowired
+
     private ReportRepository reportRepository;
+
+    @Autowired
+    public XmlToMySqlJob(ReportRepository reportRepository) {
+        this.reportRepository = reportRepository;
+    }
 
     public String inputStreamToString(InputStream is) throws IOException {
         StringBuilder sb = new StringBuilder();
