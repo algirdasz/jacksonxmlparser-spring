@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 public class XmlToMySqlJob {
 
 
-    private ReportRepository reportRepository;
+    final ReportRepository reportRepository;
 
     @Autowired
     public XmlToMySqlJob(ReportRepository reportRepository) {
