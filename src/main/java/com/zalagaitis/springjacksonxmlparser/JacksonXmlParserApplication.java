@@ -6,9 +6,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-public class BatchTestToDbApplication {
+public class JacksonXmlParserApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BatchTestToDbApplication.class, args);
+		SpringApplication.run(JacksonXmlParserApplication.class, args);
 	}
 }
